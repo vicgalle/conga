@@ -1,0 +1,29 @@
+{
+  "dims": {
+    "R": 14,
+    "T": 8760,
+    "states_per_hour": 519,
+    "kalman_state": 575,
+    "fiber": 4546496,
+    "core": 1131,
+    "joint": 4547627
+  },
+  "build_and_simulate_s": 0.552721082998687,
+  "discovery_accounting": {
+    "conflict_graph_pairs": 10335310665760.0,
+    "conflict_graph_bytes_at_1bit": 2583828234752.0,
+    "note": "dense conflict graph at 4.5M fiber coordinates needs ~2.6 TB at one bit per pair; the model-algebra contract path is the only realistic front door"
+  },
+  "collapsed_value": {
+    "compile_s": 51.93304625000019,
+    "seconds": 50.58526987499863,
+    "value": -424121.6638008523
+  },
+  "collapsed_value_and_grad": {
+    "compile_s": 214.09291099999973,
+    "seconds": 213.71514983399902,
+    "value": -424121.6638008523,
+    "grad_finite": true,
+    "grad_norm": 49013.192560875636
+  }
+}

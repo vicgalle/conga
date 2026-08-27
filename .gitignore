@@ -1,0 +1,11 @@
+.DS_Store
+.pytest_cache/
+.venv/
+__pycache__/
+*.egg-info/
+*.py[cod]
+
+# The paper artifacts are versioned; new runs are intentionally local.
+results/runs/*
+!results/runs/.gitkeep
+

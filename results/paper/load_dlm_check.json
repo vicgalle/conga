@@ -1,0 +1,35 @@
+{
+  "matched_dims": {
+    "R": 3,
+    "T": 168,
+    "states_per_hour": 40,
+    "kalman_state": 46,
+    "fiber": 6726,
+    "core": 34,
+    "joint": 6760
+  },
+  "residual_certificate": {
+    "max_abs": 2.4957444111350924e-07,
+    "max_rel": 2.409095813034989e-11,
+    "max_dr_across_x": 6.041045708116144e-08,
+    "probes": 4
+  },
+  "compile_s": {
+    "raw": 0.3526641660000678,
+    "core": 0.7519752500002141
+  },
+  "grad_seconds": {
+    "raw": 9.558545002619212e-05,
+    "core": 0.022400577100006556
+  },
+  "routing_signals": {
+    "fiber_hessian_x_invariance": 0.0,
+    "commutator_rel_norm": 0.005515591534929394,
+    "car_pencil_commutator": 1.864689572402719e-18,
+    "top10_eigvec_max_principal_angle_deg": 89.99999999870552,
+    "toeplitz_block_rel_dev": 0.4854965926561839,
+    "offband_max_abs": 0.0,
+    "static_arrow_max_abs": 0.46179792649753254,
+    "small_fiber_dim": 1926
+  }
+}
