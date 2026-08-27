@@ -64,8 +64,11 @@ def _load_dlm() -> None:
         )
     raw = {row["seed"]: row for row in grouped["NUTS-raw"]}
     compiled = {row["seed"]: row for row in grouped["NUTS-CONGA"]}
-    gains = [compiled[s]["ess_per_s"] / raw[s]["ess_per_s"] for s in raw]
-    print(f"  paired minimum-ESS/s gain: {median(gains):.0f}x")
+    gain = (
+        median(row["ess_per_s"] for row in compiled.values())
+        / median(row["ess_per_s"] for row in raw.values())
+    )
+    print(f"  minimum-ESS/s gain from medians: {gain:.0f}x")
 
 
 def _graph_gmrf() -> None:
