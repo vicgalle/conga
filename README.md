@@ -1,7 +1,7 @@
 # CONGA
 
 This is the initial release for **CONGA: Compiling Gaussian Fiber Geometry**.
-It contains the compiler itself and the three experiments in Section 4.2:
+It contains the compiler itself and the three experiments in Sections 3.1--3.3:
 graph-indexed Gaussian fields, the Stock--Watson stochastic-volatility model,
 and the electricity-load dynamic linear model.
 
@@ -54,7 +54,7 @@ lowers a recovered general-graph precision to sparse Cholesky, while
 and rectangular lattices. `conga.inference.Marginalized` is the small reference
 sampler that runs on the collapsed core and reconstructs the Gaussian fiber.
 
-## Reading the Section 4.2 results
+## Reading the results of Sections 3.1--3.3
 
 The submitted outputs are under `results/paper`; the corresponding figures are
 under `results/figures`. This command prints the main comparisons without
@@ -149,7 +149,7 @@ right place for the complete suite.
 
 - `src/conga/`: discovery, validation, transport backends, and inference.
 - `examples/`: a small model that exposes the compiler contract.
-- `experiments/`: self-contained Section 4.2 models and drivers.
+- `experiments/`: self-contained models and drivers for Sections 3.1--3.3.
 - `data/`: the Stock--Watson series and its source provenance.
 - `results/paper/`: immutable JSON outputs used in the paper.
 - `results/figures/`: submitted figures generated from those outputs.
@@ -161,7 +161,7 @@ in its `_provenance` field. The graph and load experiments generate their
 synthetic observations from the seeds recorded by their drivers.
 
 This release intentionally omits the broader PosteriorDB benchmark harness and
-the experiments outside Section 4.2. Nothing in `src/conga` imports that
+the experiments outside Sections 3.1--3.3. Nothing in `src/conga` imports that
 infrastructure.
 
 ## License

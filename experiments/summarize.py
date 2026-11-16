@@ -1,4 +1,4 @@
-"""Print a compact Section 4.2 summary from the checked-in paper results."""
+"""Print a compact summary of Sections 3.1--3.3 from the checked-in paper results."""
 from __future__ import annotations
 
 import json

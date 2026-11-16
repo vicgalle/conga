@@ -5,7 +5,7 @@ description = "Compile conditionally Gaussian geometry before posterior inferenc
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 license = { file = "LICENSE" }
-authors = [{ name = "Anonymous authors" }]
+authors = [{ name = "Víctor Gallego" }]
 dependencies = [
     "numba>=0.60,<1",
     "numpy>=1.26,<3",

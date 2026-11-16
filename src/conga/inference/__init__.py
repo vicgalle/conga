@@ -1,4 +1,4 @@
-"""Sampler components needed by the Section 4.2 experiments."""
+"""Sampler components needed by the experiments of Sections 3.1--3.3."""
 
 from .base import InferenceAlgorithm, InferenceResult
 from .fisher_hmc import FisherHMC
